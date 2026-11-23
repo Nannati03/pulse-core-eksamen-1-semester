@@ -184,3 +184,22 @@ box-sizing: border-box;
     font-size: 16px;
     text-decoration: underline;
 }
+
+/* Tekst og sale-ikon ved siden af hinanden */
+.studierabat-top {
+    display: flex;
+    align-items: center;
+    gap: 16; 
+    margin-bottom: 16px;
+    padding-right: 40px;
+}
+
+#studierabat-menu .studierabat-top p {
+    margin: 0;
+}
+
+.studierabat-top img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
