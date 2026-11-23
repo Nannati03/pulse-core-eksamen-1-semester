@@ -38,8 +38,11 @@
 
         <img id="watch" src="img/watch.png" alt="watch">
 
-        <button class="slide-in-menu">
-            <h4>STUDIERABAT</h4>
+        <button 
+            class="slide-in-menu"
+            id= "studeierabat-knap"
+            type="button">
+                <span>STUDIERABAT</span>
         </button>
         
         
@@ -371,7 +374,23 @@
     </div>
 </footer>
 
-
+<!-- Studierabat: boksen, der åbner ved klik -->
+ <dialog
+    id="studierabat-menu">
+        <button type="button" id="luk studierabat">
+            ×
+        </button>
+        <p>STUDIERABAT</p>
+        <h2>STUDIELIV. <br>
+            MERE PULS.
+        </h2>
+        <h3>Sådan får du studierabat</h3>
+        <ol>
+            <li>Bekræft, at du er studerende</li>
+            <li>Få din personlige rabatkode</li>
+            <li>Brug koden ved checkout</li>
+        </ol>
+ </dialog>
 
 </body>
 
