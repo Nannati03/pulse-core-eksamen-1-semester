@@ -55,34 +55,66 @@
 
 <!-- ================= PRODUCT SHOWCASE ================= -->
     
-<section>
-    <div class="products">
-        <article>
-            <h3>Find din favoritfarve</h3>
-            <p>
-            Tre tidløse farver. Samme holdbarhed,<br>
-            komfort og funktionalitet. Vælg den farve,<br>
-            der passer til din hverdag.
-            </p>
-
-
-            <div class="farvevalg">  
-                <span class="farve-cirkel sort">Graphite Black</span>
-               
-                <span class="farve-cirkel graa">Titanium Grey</span>
-               
-                <span class="farve-cirkel groen">Forest Green</span>
-               
-            </div>
-        </article>
-        <div class="product-cards">
-            <img src="img/watch-black.png" alt="watch-black">
-            <img src="img/watch-grey.png" alt="watch-grey">
-            <img src="img/watch-green.png" alt="watch-green">
+<section class="ur-karrusel">
+     <!-- De to synlige billedbokse -->
+    <div class="ur-billeder">
+        <div class="ur-boks">
+            <img 
+                id="ur-billede-venstre"
+                src="img/sort-ur-1.svg"
+                alt="Sort Pulse Core - billede 1">
         </div>
-        <!-- <h3>Graphite Black</h3>
-        <h3>Titanium Grey</h3>
-        <h3>Forest Green</h3> -->
+        <div class="ur-boks">
+            <img
+                id="ur-billede-hoejre"
+                src="img/sort-ur-2.svg"
+                alt="Sort Pulse Core - billede 2">
+        </div>
+    </div>
+
+    <!-- Farvevalg og pile under billederne -->
+    <div class="ur-kontrol">
+        <div class="ur-farver">
+            <button
+                class="ur-farve valgt"
+                id="farve-sort"
+                type="button"
+                data-farve="sort"
+                title="Graphite Black">
+            </button>
+            
+            <button
+                class="ur-farve"
+                id="farve-groen"
+                type="button"
+                data-farve="grøn"
+                title="Forest Green">
+            </button>
+
+            <button
+                class="ur-farve"
+                id="farve-graa"
+                type="button"
+                data-farve="grå"
+                title="Titanium Grey">
+            </button>
+        </div>
+
+        <div class="ur-pile">
+            <button
+                id="ur-forrige"
+                type="button"
+                title="Forrige billeder">
+                ←
+            </button>
+
+            <button
+                id="ur-naeste"
+                type="button"
+                title="Næste billeder">
+                →
+            </button>
+        </div>
     </div>
 </section>
 
