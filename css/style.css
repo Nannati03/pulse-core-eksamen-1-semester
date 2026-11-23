@@ -32,7 +32,7 @@ box-sizing: border-box;
 
 body
 {
-background-image: url(img/herosection.png);
+background-image: url("../img/herosection.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -784,7 +784,7 @@ font-size: 23px;
 
 
 /* <!-- ================= Baggrund ================= --> */
-.hero{background-image: url(img/herosection.png);
+.hero{background-image: url("../img/herosection.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
