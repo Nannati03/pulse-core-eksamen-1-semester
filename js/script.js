@@ -1,5 +1,8 @@
 "use strict";
 
+
+
+
 /////////STUDIERABAT SEKTION/////////////////////////
 
 // Finder knappen og dialogboksen i HTML//
@@ -16,6 +19,9 @@ studierabatKnap.addEventListener("click", () => {
 lukStudierabat.addEventListener("click", () => {
     studierabatMenu.close();
 });
+
+
+
 
 /////////////UR-KARRUSEL/////////////////////////////////
 
@@ -36,3 +42,67 @@ const urSlides = [
 ];
 
 // Karrusellen starter med sort og første slide
+let valgtFarve = "sort";
+let aktueltSlide = 0;
+
+// Viser billederne og markerer den valgte farve (${...} indsætter en variabels værdi i teksten)
+function opdaterKarrusel() {
+    const venstreNummer = urSlides[aktueltSlide][0];
+    const hoejreNummer = urSlides[aktueltSlide][1];
+
+     urVenstre.src =
+        `img/${valgtFarve}-ur-${venstreNummer}.svg`;
+
+    urHoejre.src =
+        `img/${valgtFarve}-ur-${hoejreNummer}.svg`;
+
+    urVenstre.alt =
+        `Pulse Core i ${valgtFarve} - billede ${venstreNummer}`;
+
+    urHoejre.alt =
+        `Pulse Core i ${valgtFarve} - billede ${hoejreNummer}`;
+
+    farveKnapper.forEach((knap) => {
+        knap.classList.toggle(
+            "valgt",
+            knap.dataset.farve === valgtFarve
+        );
+    });
+}
+
+// Næste slide
+urNaeste.addEventListener("click", () => {
+    aktueltSlide = aktueltSlide + 1;
+
+    // Efter sidste slide starter vi forfra
+    if (aktueltSlide >= urSlides.length) {
+        aktueltSlide = 0;
+    }
+
+    opdaterKarrusel();
+});
+
+// Forrige slide
+urForrige.addEventListener("click", () => {
+    aktueltSlide = aktueltSlide - 1;
+
+    // Før første slide går vi til det sidste
+    if (aktueltSlide < 0) {
+        aktueltSlide = urSlides.length - 1;
+    }
+
+    opdaterKarrusel();
+});
+
+// Skifter urfarve og vender tilbage til første slide
+farveKnapper.forEach((knap) => {
+    knap.addEventListener("click", () => {
+        valgtFarve = knap.dataset.farve;
+        aktueltSlide = 0;
+
+        opdaterKarrusel();
+    });
+});
+
+// Viser starttilstanden
+opdaterKarrusel();
