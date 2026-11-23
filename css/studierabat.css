@@ -136,19 +136,38 @@ box-sizing: border-box;
 
 /* Den nummererede liste */
 #studierabat-menu ol {
-    padding-left: 28px;
+    list-style: none;
+    padding: 0;
+    counter-reset: trin;
 }
 
 #studierabat-menu li {
+    counter-increment: trin;
+    display: flex;
+    align-items: center;
+    gap: 16px;
     margin-bottom: 18px;
-    padding-left: 8px;
+    padding: 0;
     font-size: 18px;
     line-height: 1.5;
 }
 
-#studierabat-menu li::marker {
-    color: #8fa70e;
-    font-weight: bold;
+/* Tal med lysegrøn baggrund */
+#studierabat-menu li::before {
+    content: counter(trin);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 7px;
+
+    background-color: #dbea91;
+    color: black;
+    font-size: 24px;
 }
 
 /* Den grønne købsknap */
