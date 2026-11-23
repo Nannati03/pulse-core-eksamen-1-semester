@@ -32,7 +32,6 @@ box-sizing: border-box;
 
 body
 {
-background-image: url("../img/herosection.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -782,7 +781,7 @@ font-size: 23px;
     min-height: 100dvh;
     padding: 110px 10% 40px;
 
-background-image: url("../img/herosection.png");
+background-image: url("../img/hero-sektion-billede.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
