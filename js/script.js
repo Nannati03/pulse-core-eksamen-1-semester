@@ -1,8 +1,6 @@
 "use strict";
 
 
-
-
 /////////STUDIERABAT SEKTION/////////////////////////
 
 // Finder knappen og dialogboksen i HTML//
