@@ -121,28 +121,127 @@
 
 <!-- ================= Funktioner ================= -->
  <h2 id="Funktioner">Funktioner</h2>
-<section class="funktioner-tekst-billede">
-        
-    <div class="feature-tekst">
-        <h2>Forstå din søvn</h2>
-        <p>  Få et klart overblik over din søvn. Sportsuret registrerer din søvnlængde, søvnfaser og natlige opvågninger.</p>
-        <p>Brug dine data til at optimere dine søvnvaner, din træning og dit energiniveau.</p>
-        <br>
-        <ul>
-            <li>Samlet søvntid</li> 
-            <li>Let, dyb og rem søvn</li> 
-            <li>Natlige opvågninger</li> 
-            <li>Personlig søvnscore</li> 
-        </ul>
-        
+
+ <section class="funktion-karrusel" id="funktioner">
+    <div class="funktion-raekke">
+
+        <!-- Pil tilbage -->
+         <button
+         class="funktion-pil"
+         id="funktion-forrige"
+         type="button"
+         title="forrige-funktion">
+         ←
+         </button>
+
+         <!-- Selve slidet -->
+         <div class="funktion-slide">
+            <div class="funktion-ur">
+                <img
+                id="funktion-billede"
+                src="img/ur-søvn.svg"
+                alt="Pulse Core og søvnvisning">
+            </div>
+
+            <div class="funktion-indhold">
+                <p class="funktion-kategori">
+                    SØVN OG RESTITUTION
+                </p>
+
+                <h2 id="funktion-titel">Forstå din søvn</h2>
+
+                <p class="funktion-beskrivelse">
+                    Følg din søvn, og få overblik over dine søvnvaner
+                </p>
+
+                <!-- De fire vendbare kort -->
+                 <div class="funktion-kort-grid">
+                    <button class="funktion-kort" type="button">
+                        <span class="funktion-kort-indre">
+                            <span class="funktion-forside">
+                                <strong>Samlet søvntid</strong>
+                            </span>
+                            <span class="funktion-bagside">
+                                Se, hvor længe du har sovet i løbet af natten.
+                            </span>
+                        </span>
+                    </button>
+
+                    <button class="funktion-kort" type="button">
+                        <span class="funktion-kort-indre">
+                            <span class="funktion-forside">
+                                <strong>Let, dyb og REM-søvn</strong>
+                            </span>
+                            <span class="funktion-bagside">
+                                Få overblik over, hvordan din søvn fordeler
+                                sig mellem de forskellige søvnfaser.
+                            </span>
+                        </span>
+                    </button>
+
+                    <button class="funktion-kort" type="button">
+                        <span class="funktion-kort-indre">
+                            <span class="funktion-forside">
+                                <strong>Nattracking</strong>
+                            </span>
+                            <span class="funktion-bagside">
+                                Få indblik i dine natlige opvågninger
+                                og dit søvnmønster.
+                            </span>
+                        </span>
+                    </button>
+
+                    <button class="funktion-kort" type="button">
+                        <span class="funktion-kort-indre">
+                            <span class="funktion-forside">
+                                <strong>Personlig søvnscore</strong>
+                            </span>
+                            <span class="funktion-bagside">
+                                Få en samlet vurdering af din søvn,
+                                som gør det nemmere at følge din udvikling.
+                            </span>
+                        </span>
+                    </button>
+
+                 </div>
+            </div>
+         </div>
+
+        <!-- Pil frem -->
+         <button 
+            class="funktion-pil"
+            id="funktion-naeste"
+            type="button"
+            title="Naeste funktion">
+            →
+        </button>
     </div>
 
-    <div class="funktion-box">
-        <img src="img/watch2.png" alt="Pulse Core funktioner" >
-        <div class="feature-image">
-        </div>
-    </div>
-</section>
+    <!-- Prikker under karrusellen -->
+     <div class="funktion-prikker">
+        <button 
+            class="funktion-prik-aktiv"
+            type="button"
+            title="Slide 1">
+        </button>
+        <button 
+            class="funktion-prik"
+            type="button" 
+            title="Slide 2">
+        </button>
+        <button 
+            class="funktion-prik"
+            type="button" 
+            title="Slide 3">
+        </button>
+        <button 
+            class="funktion-prik"
+            type="button"
+            title="Slide 4">
+        </button>
+     </div>
+     
+ </section>
 
 
 <!-- ================= App ================= -->
