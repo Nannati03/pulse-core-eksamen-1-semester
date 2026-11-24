@@ -281,44 +281,200 @@ margin-left: 16px;
 
 
 /* ================= Funktioner ================= */
-#Funktioner
-{
-        /* background-color: var(--primary-color); */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    /* align-items: flex-start; */
-    margin-left: 150px;
-    margin-bottom: -51px;
-    font-size: 35px;
-}
-.feature-tekst
-{
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: right;
+
+.funktion-karrusel {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    background-color: var(--primary-color)
 }
 
-.funktioner-tekst-billede
-{
-    background: linear-gradient(120deg, #555, #292626);
+/* Pile og slide ved siden af hinanden */
+.funktion-raekke {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
     align-items: center;
-    margin: 7%;
-    border-radius: 46px;
+    justify-content: center;
+    gap: 24px;
 }
-.funktion-box img
-{
-display: flex;
 
+/* Den store boks */
+.funktion-slide {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+    align-items: center;
+    gap: 24px;
+    flex: 1;
+    min-width: 0;
+    padding: 28px;
+    background-color: #303030;
+    border-radius: 36px;
+    box-shadow: 0 14px 20px rgb(0 0 0 / 30%);
+}
 
+/* Ur med grøn glød bagved */
+.funktion-ur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: radial-gradient(ellipse, rgb(143 167 14 / 45%)0%,transparent 70%);
 }
-.feature-tekst ul {
-    color: #ffffff;
+
+.funktion-ur img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
 }
+
+.funktion-indhold {
+    min-width: 0;
+}
+
+/* Tekster over kortene */
+.funktion-karrusel .funktion-kategori {
+    margin-bottom: 8px;
+    color: var(--secondary-conlor);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#funktion-titel{
+    margin-bottom: 8px;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+#funktion-beskivelse {
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Inter' sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Fire kort i to kolonner */
+.funktion-kort-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Knappen omkring hvert kort */
+.funktion-kort {
+    height: 105px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    perspective: 800px;
+}
+
+/* Denne del drejer, når kortet vendes */
+.funktion-kort-indre{
+    position:relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+/* Fælles udseende på forside og bagside */
+
+.funktion-forside, .funktion-bagside {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    background-color: #4A4A4A;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.funktion-forside {
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.funktion-bagside {
+    transform: rotateY(180deg);
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Grøn kant og glød ved hover */
+.funktion-kort:hover .funktion-forside,
+.funktion-kort:hover .funktion-bagside {
+    border-color: #8FA70E;
+    box-shadow: 0 0 14px rgb(188 251 98 / 45%);
+}
+
+/* Kobles til Javascript*/
+.funktion-kort.vendt .funktion-kort-indre {
+    transform: rotateY(180deg);
+}
+
+/* Plads til ikonerne, når de tilføjes */
+.funktion-forside img{
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+/* Pilene */
+.funktion-pil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background-color: #161616;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.funktion-pil:hover {
+    background-color: #494949;
+}
+
+/* Prikkerne under slidet */
+.funktion-prikker {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.funktion-prik {
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.funktion-prik.aktiv {
+    background-color: #6E6B6B;
+}
+
 
 
 /* ================= App ================= */
