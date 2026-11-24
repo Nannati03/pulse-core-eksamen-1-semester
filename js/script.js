@@ -119,4 +119,70 @@ funktionsKort.forEach((kort)=>{
 });
 
 
-//////////// ================= Funktionskarrusel =================//////////////////
+////////////// ================= Skift mellem funktionsslides =================/////////////////
+// Finder slides, prikker og pile
+const funktionSlides = document.querySelectorAll(
+    ".funktion-karrusel .funktion-slide"
+);
+
+const funktionPrikker = document.querySelectorAll(
+    ".funktion-karrusel .funktion-prik"
+);
+
+const funktionForrige = document.getElementById("funktion-forrige");
+const funktionNaeste = document.getElementById("funktion-naeste");
+
+// Starter på første slide
+let aktueltFunktionSlide = 0;
+
+// Viser det valgte slide og markerer den tilhørende prik
+function visFunktionSlide() {
+    funktionSlides.forEach((slide, nummer) => {
+        slide.hidden = nummer !== aktueltFunktionSlide;
+
+        // Vender kortene tilbage til forsiden ved slideskift
+        slide.querySelectorAll(".funktion-kort").forEach((kort) => {
+            kort.classList.remove("vendt");
+        });
+    });
+
+    funktionPrikker.forEach((prik, nummer) => {
+        prik.classList.toggle(
+            "aktiv",
+            nummer === aktueltFunktionSlide
+        );
+    });
+}
+
+// Pil frem
+funktionNaeste.addEventListener("click", () => {
+    aktueltFunktionSlide = aktueltFunktionSlide + 1;
+
+    if (aktueltFunktionSlide >= funktionSlides.length) {
+        aktueltFunktionSlide = 0;
+    }
+
+    visFunktionSlide();
+});
+
+// Pil tilbage
+funktionForrige.addEventListener("click", () => {
+    aktueltFunktionSlide = aktueltFunktionSlide - 1;
+
+    if (aktueltFunktionSlide < 0) {
+        aktueltFunktionSlide = funktionSlides.length - 1;
+    }
+
+    visFunktionSlide();
+});
+
+// Klik på en prik viser det tilhørende slide
+funktionPrikker.forEach((prik, nummer) => {
+    prik.addEventListener("click", () => {
+        aktueltFunktionSlide = nummer;
+        visFunktionSlide();
+    });
+});
+
+// Viser første slide, når siden indlæses
+visFunktionSlide();
