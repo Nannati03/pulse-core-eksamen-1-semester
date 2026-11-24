@@ -104,3 +104,16 @@ farveKnapper.forEach((knap) => {
 
 // Viser starttilstanden
 opdaterKarrusel();
+
+
+
+////////// ================= Vendbare funktionskort =================//////////////////
+// Finder de fire kort//
+const funktionsKort = document.querySelectorAll(".funktion-kort");
+
+// Tilføjer en klikfunktion til hvert kort//
+funktionsKort.forEach((kort)=>{
+    kort.addEventListener("click", ()=>{
+        kort.classList.toggle("vendt");
+    });
+});
