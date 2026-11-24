@@ -457,32 +457,74 @@
 
 
 <!-- ================= App ================= -->
-<section>
-    <!-- <h5>New app</h5> -->
-    <br>
-    <img id="app-picture" src="img/app.png" alt="app on phone">
-    <div>
-        <div id="box-1">
-            <h3 id= h3-app>Pulse core app</h3>
-            <br>
-                <p id="underoverskrift"><b>Hele din aktivitet samlet et sted</b></p>
-                <p id="pulse-app">
-                    <br>
-                Pulse Core forbindes med dit Pulse Core-sportsur og giver dig et enkelt overblik over din sundhed, træning og daglige aktivitet.
-                </p>
-                <br>
-                <p id="forgænger-til-liste">I appen kan du blandt andet følge:</p>
-                <ul id="app-list">
-                <li>Puls og daglige skridt</li>
-                <li>Søvn og restitution</li>
-                <li>Daily Readiness</li>
-                <li>Træningsdata og løberuter</li>
-                <li>Urets batteriniveau</li>
-                </ul>
-            <br>
-            <p id="sidste-tekst">Dine data synkroniseres automatisk, så du nemt kan følge din udvikling og få mere ud af både din træning og restitution.</p>
+
+<section class="app-sektion">
+    <h2 class="app-overskrift">Pulse Core appen</h2>
+
+    <div class="app-indhold">
+        <!-- Telefonen til venstre -->
+        <div class="app-billede">
+            <img 
+            src="img/app.png"
+            alt="Pulse Core appen vist på en telefon">
         </div>
-        <button id="download">Download here</button>
+
+         <!-- Tekst og informationsbokse til højre -->
+        <div class="app-tekst">
+            <h3 class="app-titel">
+                DIT OVERBLIK.<br>
+                DIN UDVIKLING.
+            </h3>
+
+            <p class="app-intro">
+                Saml din daglige aktivitet, søvn og træning ét sted.
+            </p>
+
+            <div class="app-info-liste">
+                <!-- Aktivitet -->
+                 <div class="app-info">
+                    <img 
+                    src="img/løber grøn.svg"
+                    alt="Løber">
+
+                    <div>
+                        <h4>Aktivitet</h4>
+                            <p>Følg skridt, distance og forbrænding</p>
+                    </div>
+                 </div>
+                 
+                  <!-- Søvn -->
+                <div class="app-info">
+                    <img 
+                    src="img/maane grøn.svg" 
+                    alt="Måne">
+
+                    <div>
+                        <h4>Søvn</h4>
+                        <p>Få indblik i din søvn og søvnkvalitet</p>
+                    </div>
+                </div>
+
+                <!-- Træning -->
+                <div class="app-info">
+                    <img src="img/vaegt grøn.svg" alt="Vægt">
+
+                    <div>
+                        <h4>Træning</h4>
+                        <p>Se dine træningspas og fremskridt</p>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Hent-knap og platforme -->
+                <div class="app-download">
+                    <a class="app-hent" href="INDSÆT-DOWNLOADLINK">
+                        HENT APPEN
+                    </a>
+
+                    <p>Fås til iOS og Android</p>
+                </div>
+        </div>
     </div>
 </section>
 
