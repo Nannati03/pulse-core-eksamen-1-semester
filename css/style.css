@@ -321,6 +321,10 @@ font-size: 20px;
     box-shadow: 0 14px 20px rgb(0 0 0 / 30%);
 }
 
+.funktion-slide[hidden] {
+    display: none;
+}
+
 /* Ur med grøn glød bagved */
 .funktion-ur {
     position: relative;
@@ -364,13 +368,13 @@ font-size: 20px;
     font-weight: 700;
 }
 
-#funktion-titel{
+.funktion-titel{
     margin-bottom: 8px;
     font-size: 26px;
     line-height: 1.3;
 }
 
-#funktion-beskrivelse {
+.funktion-beskrivelse {
     margin-bottom: 28px;
     color: white;
     font-family: 'Inter', sans-serif;

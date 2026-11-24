@@ -117,3 +117,6 @@ funktionsKort.forEach((kort)=>{
         kort.classList.toggle("vendt");
     });
 });
+
+
+//////////// ================= Funktionskarrusel =================//////////////////
