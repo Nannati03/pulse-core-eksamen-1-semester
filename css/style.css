@@ -801,6 +801,7 @@ font-size: 20px;
 .app-detaljer p {
     color: var(--white);
     font-family: var(--font-family-body);
+    margin-bottom: 20px;
 }
 
 .detalje-tekst h2{
@@ -809,9 +810,29 @@ font-size: 20px;
     margin-bottom: 20px;
 }
 
+.detalje-tekst h4 {
+    color: var(--secondary-conlor);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-small);
+    margin-bottom: 15px;
+}
+
 .detalje-tekst {
     max-width: 430px;
 }
+
+.laes-mere {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-conlor);
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 
 
 /* <!-- ================= Easy Connect ================= --> */
