@@ -609,6 +609,7 @@ font-size: 20px;
     padding: 20px;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .connect-billeder {
@@ -690,7 +691,7 @@ font-size: 20px;
    padding: 50px 90px;
    display: grid;
    align-items: center;
-   background: #242323;
+   background: var(--primary-color);
 }
 
 .boks5{
@@ -884,51 +885,6 @@ font-size: 20px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-
-
-
-/* <!-- ================= Easy Connect ================= --> */
-
-.connect-sektion {
-/*  width: 100%; */
- padding: 45px;
- box-sizing: border-box;
- background-size: cover;
- background-position: center;
-}
-
-
-.connect-boks{
-   display:flex;
-   flex-direction: row;
-   align-content: center;
-   justify-content: space-evenly;
-  /*  width: 100%; */
-   max-width: 1900px;
-   min-height: 750px;
-   margin: 70px;
-   padding: 60px;
-   background-color: rgba(65, 65, 65, 0.92);
-   border-radius: 35px;
-   box-sizing: border-box;
-   overflow: hidden;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-
-.connect-billeder {
-   display: flex;
-   align-items: flex-end;
-   gap: 30px;
-   /* width: 200px; */
-   /* height: 300px; */
-}
-
-.easy-connect
-{
-    margin-left:100px;
 }
 
 
