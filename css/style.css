@@ -685,7 +685,7 @@ font-size: 20px;
     
 /* ================= Snoet linje med appens funktioner ================= */
 
-.feature{
+.app-detaljer{
    min-height: 300px;
    padding: 50px 90px;
    display: grid;
@@ -699,134 +699,110 @@ font-size: 20px;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-
-
    width: 100%;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-
-
    border-radius: 20px;
    box-sizing: border-box;
 }
 
-
-.boks5 img {
+.boks5 video {
  display: block;
  width: 442px;
  max-width: 45%;
  height: auto;
 }
-
 
 .boks6{
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-
-
  /*   width: 100%; */
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-
-
    border-radius: 20px;
    box-sizing: border-box;
 }
 
-
-.boks6 img {
+.boks6 video {
  display: block;
  width: 442px;
  max-width: 45%;
  height: auto;
 }
-
 
 .boks7{
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-
-
   /*  width: 100%; */
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-
-
    border-radius: 20px;
    box-sizing: border-box;
 }
 
-
-.boks7 img {
+.boks7 video {
  display: block;
  width: 442px;
  max-width: 45%;
  height: auto;
 }
-
 
 .boks8{
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-
-
    width: 100%;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-
-
    border-radius: 20px;
    box-sizing: border-box;
 }
 
-
-.boks8 img {
+.boks8 video {
  display: block;
  width: 442px;
  max-width: 45%;
  height: auto;
 }
-
 
 .boks9{
    display: flex;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-
-
    width: 100%;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-
-
    border-radius: 20px;
    box-sizing: border-box;
 }
 
-
-.boks9 img {
+.boks9 video {
  display: block;
  width: 442px;
  max-width: 45%;
  height: auto;
 }
 
-
 .omvendt {
  flex-direction: row-reverse;
 }
+
+.app-detaljer p {
+    color: var(--white);
+    font-family: var(--font-family-body);
+}
+
 
 
 /* <!-- ================= Easy Connect ================= --> */
