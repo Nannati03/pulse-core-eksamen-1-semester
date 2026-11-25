@@ -117,3 +117,43 @@ funktionsKort.forEach((kort)=>{
     });
 });
 
+
+////////// ================= Trustpilot =================//////////////////
+
+const anmeldelser = [{
+    antalStjerner: 5,
+    overskrift: "God kvalitet",
+    beskrivelse: "Produktet var god kvalitet og jeg vil helt sikkert anbefale",
+    navn:"Jannik",
+    tidForAnmeldelse: "For 20 timer siden",
+}, 
+{
+    antalStjerner: 4,
+    overskrift: "Alt som lovet",
+    beskrivelse: "Uret har mange gode og brugbare funktioner",
+    navn:"Michael",
+    tidForAnmeldelse: "For 1 dag siden",  
+}, 
+{
+    antalStjerner: 4,
+    overskrift: "Fedt design!!",
+    beskrivelse: "Den grå farve på uret er vildt flot",
+    navn:"Simon",
+    tidForAnmeldelse: "For 1 dag siden",  
+},
+{
+    antalStjerner: 5,
+    overskrift: "Kan 100% anbefales",
+    beskrivelse: "Den måler meget præcist, og hjælper mig med træning. ",
+    navn:"Jeppe",
+    tidForAnmeldelse: "For 3 dage siden",  
+},
+{
+    antalStjerner: 3,
+    overskrift: "Helt ok",
+    beskrivelse: "Kan det den skal. Jeg bruger den hver dag",
+    navn:"Tommy",
+    tidForAnmeldelse: "For 4 dage siden",  
+}]
+
+const anmeldelseRaekke = document.querySelector(".anmeldelse-række")
