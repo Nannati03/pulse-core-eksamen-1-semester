@@ -690,7 +690,6 @@ font-size: 20px;
    padding: 50px 90px;
    display: grid;
    align-items: center;
-   gap: 80px;
    background: #242323;
 }
 
@@ -703,8 +702,8 @@ font-size: 20px;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-   border-radius: 20px;
    box-sizing: border-box;
+   position: relative;
 }
 
 .boks5 video {
@@ -712,6 +711,17 @@ font-size: 20px;
  width: 300px;
  max-width: 45%;
  height: auto;
+}
+
+.boks5::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    right: 100px;
+    border: 1px solid var(--secondary-conlor);
+   border-right: none;
+   border-bottom-left-radius: 100px;
+   border-top-left-radius: 100px;
 }
 
 .boks6{
@@ -723,8 +733,8 @@ font-size: 20px;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-   border-radius: 20px;
    box-sizing: border-box;
+   position: relative;
 }
 
 .boks6 video {
@@ -732,6 +742,17 @@ font-size: 20px;
  width: 300px;
  max-width: 45%;
  height: auto;
+}
+
+.boks6::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    left: 100px;
+    border: 1px solid var(--secondary-conlor);
+   border-left: none;
+   border-bottom-right-radius: 100px;
+   border-top-right-radius: 100px;
 }
 
 .boks7{
@@ -743,8 +764,8 @@ font-size: 20px;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-   border-radius: 20px;
    box-sizing: border-box;
+   position: relative;
 }
 
 .boks7 video {
@@ -752,6 +773,17 @@ font-size: 20px;
  width: 300px;
  max-width: 45%;
  height: auto;
+}
+
+.boks7::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    right: 100px;
+    border: 1px solid var(--secondary-conlor);
+   border-right: none;
+   border-bottom-left-radius: 100px;
+   border-top-left-radius: 100px;
 }
 
 .boks8{
@@ -763,8 +795,8 @@ font-size: 20px;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-   border-radius: 20px;
    box-sizing: border-box;
+   position: relative;
 }
 
 .boks8 video {
@@ -772,6 +804,17 @@ font-size: 20px;
  width: 300px;
  max-width: 45%;
  height: auto;
+}
+
+.boks8::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    left: 100px;
+    border: 1px solid var(--secondary-conlor);
+   border-left: none;
+   border-bottom-right-radius: 100px;
+   border-top-right-radius: 100px;
 }
 
 .boks9{
@@ -783,8 +826,8 @@ font-size: 20px;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
-   border-radius: 20px;
    box-sizing: border-box;
+   position: relative;
 }
 
 .boks9 video {
@@ -792,6 +835,17 @@ font-size: 20px;
  width: 300px;
  max-width: 45%;
  height: auto;
+}
+
+.boks9::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    right: 100px;
+    border: 1px solid var(--secondary-conlor);
+   border-right: none;
+   border-bottom-left-radius: 100px;
+   border-top-left-radius: 100px;
 }
 
 .omvendt {
