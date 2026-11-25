@@ -597,6 +597,94 @@ font-size: 20px;
 .app-overskrift {
     margin-bottom: 30px;
 }
+
+/* ================= Connect ================= */
+
+.connect-boks-connect {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323232;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.connect-billeder {
+    position: relative;
+    width: 400px;
+    height: 350px;
+}
+
+.connect-billeder img {
+    width: 150px;
+    height: auto;
+}
+
+.connect-telefon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.connect-ur {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.connect-hoeretelefoner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.connect-punkt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.connect-punkt img {
+    width: 35px;
+    height: auto;
+}
+
+.connect-punkt h4 {
+    font-size: 16px;
+    font-family: var(--font-family-body);
+    color: white;
+    font-weight: var(--font-weight-medium);
+}
+
+.connect-indhold h3 {
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-xl);
+    margin-bottom: 20px;
+}
+
+.connect-tekst {
+    color: var(--white);
+    font-family: var(--font-family-body);
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+.connect-overskrift {
+    max-width: 1000px;
+    margin-top:0;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 25px;
+}
+
+
+
+
+
     
 /* ================= Snoet linje med appens funktioner ================= */
 
