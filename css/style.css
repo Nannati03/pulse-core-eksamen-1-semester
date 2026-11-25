@@ -709,7 +709,7 @@ font-size: 20px;
 
 .boks5 video {
  display: block;
- width: 442px;
+ width: 300px;
  max-width: 45%;
  height: auto;
 }
@@ -719,7 +719,7 @@ font-size: 20px;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
- /*   width: 100%; */
+   width: 100%;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
@@ -729,7 +729,7 @@ font-size: 20px;
 
 .boks6 video {
  display: block;
- width: 442px;
+ width: 300px;
  max-width: 45%;
  height: auto;
 }
@@ -739,7 +739,7 @@ font-size: 20px;
    justify-content: space-between;
    align-items: center;
    gap: 30px;
-  /*  width: 100%; */
+   width: 100%;
    max-width: 1000px;
    margin: 0 auto;
    padding: 30px;
@@ -749,7 +749,7 @@ font-size: 20px;
 
 .boks7 video {
  display: block;
- width: 442px;
+ width: 300px;
  max-width: 45%;
  height: auto;
 }
@@ -769,7 +769,7 @@ font-size: 20px;
 
 .boks8 video {
  display: block;
- width: 442px;
+ width: 300px;
  max-width: 45%;
  height: auto;
 }
@@ -789,7 +789,7 @@ font-size: 20px;
 
 .boks9 video {
  display: block;
- width: 442px;
+ width: 300px;
  max-width: 45%;
  height: auto;
 }
@@ -803,6 +803,15 @@ font-size: 20px;
     font-family: var(--font-family-body);
 }
 
+.detalje-tekst h2{
+    color: var(--white);
+    font-family: var(--font-family);
+    margin-bottom: 20px;
+}
+
+.detalje-tekst {
+    max-width: 430px;
+}
 
 
 /* <!-- ================= Easy Connect ================= --> */
