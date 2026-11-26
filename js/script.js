@@ -161,5 +161,13 @@ const anmeldelseRaekke = document.querySelector(".anmeldelse-række")
 const anmeldelseTemplate = document.querySelector(".anmeldelse-template");
 
 anmeldelser.forEach((anmeldelse) => {
-    console.log(anmeldelse.navn)
+    const kort = anmeldelseTemplate.content.cloneNode(true);
+
+    kort.querySelector(".anmeldelse-overskrift").textContent = anmeldelse.overskrift;
+    kort.querySelector(".beskrivelse-trustpilot").textContent = anmeldelse.beskrivelse;
+    kort.querySelector(".anmeldelse-afsender").textContent = anmeldelse.navn;
+    kort.querySelector(".tid-for-anmeldelse").textContent = anmeldelse.tidForAnmeldelse;
+
+    anmeldelseRaekke.appendChild(kort)
 })
+
