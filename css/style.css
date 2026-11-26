@@ -894,8 +894,6 @@ font-size: 20px;
 
 /* <!-- ================= Trustpilot ================= --> */
 
-
-
 .anmeldelser {
    width: 100%;
    margin: 0 auto;
@@ -903,7 +901,6 @@ font-size: 20px;
    background-color: #656363;
    box-sizing: border-box;
 }
-
 
 .anmeldelser h2{
    margin: 0 0 30px;
@@ -914,78 +911,12 @@ font-size: 20px;
    text-align: center;
 }
 
-
-.anmeldelser-linje{
-   position: relative;
-   display: flex;
-   align-items: center;
-   gap: 20px;
-}
-
-
 .anmeldelse-række{
    display: flex;
    gap: 15px;
    width: 100%;
    justify-content: center;
    align-items: stretch;
-
-
-}
-
-
-.boks10{
-   width: 100%;
-   margin: 0;
-   max-width: 230px;
-   min-height: 200px;
-   padding: 30px 10px 10px;
-   background-color: #bbb8b8;
-   box-sizing: border-box;
-}
-
-
-.boks11{
-   width: 100%;
-   margin: 0;
-   max-width: 230px;
-   min-height: 200px;
-   padding: 30px 10px 10px;
-   background-color: #bbb8b8;
-   box-sizing: border-box;
-}
-
-
-.boks12{
-   width: 100%;
-   margin: 0;
-   max-width: 230px;
-   min-height: 200px;
-   padding: 30px 10px 10px;
-   background-color: #bbb8b8;
-   box-sizing: border-box;
-}
-
-
-.boks13{
-   width: 100%;
-   margin: 0;
-   max-width: 230px;
-   min-height: 200px;
-   padding: 30px 10px 10px;
-   background-color: #bbb8b8;
-   box-sizing: border-box;
-}
-
-
-.boks14{
-   width: 100%;
-   margin: 0;
-   max-width: 230px;
-   min-height: 200px;
-   padding: 30px 10px 10px;
-   background-color: #bbb8b8;
-   box-sizing: border-box;
 }
 
 h4
@@ -1006,7 +937,6 @@ font-size: 110%;
    display:flex;
 }
 
-
 .stjerner span {
  display: flex;
  width: 17px;
@@ -1018,7 +948,6 @@ font-size: 110%;
  font-size: 14px;
 }
 
-
 .trustpilot {
  display: flex;
  justify-content: center;
@@ -1028,15 +957,8 @@ font-size: 110%;
  font-size: 15px;
 }
 
-
 .trustpilot-stjerne {
    color: #00b67a;
-}
-
-.god-kvalitet
-{
-font-size: 23px;
-
 }
 
 
