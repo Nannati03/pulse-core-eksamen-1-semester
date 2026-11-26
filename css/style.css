@@ -894,6 +894,16 @@ font-size: 20px;
 
 /* <!-- ================= Trustpilot ================= --> */
 
+.anmeldelse-kort {
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    font-family: var(--font-family-body);
+}
+
 .anmeldelser {
    width: 100%;
    margin: 0 auto;
@@ -911,12 +921,20 @@ font-size: 20px;
    text-align: center;
 }
 
+.anmeldelse-overskrift {
+    margin-bottom: 10px;
+}
+
 .anmeldelse-række{
    display: flex;
    gap: 15px;
    width: 100%;
-   justify-content: center;
+   justify-content:flex-start;
    align-items: stretch;
+}
+
+.anmeldelse-vindue {
+    overflow: hidden;
 }
 
 h4
@@ -930,8 +948,8 @@ font-size: 140%;
 {
 color: #242323;
 font-size: 110%;
+margin-bottom: 10px;
 }
-
 
 .stjerner{
    display:flex;
