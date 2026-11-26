@@ -158,6 +158,8 @@ const anmeldelser = [{
 
 const anmeldelseRaekke = document.querySelector(".anmeldelse-række")
 
+const anmeldelseTemplate = document.querySelector(".anmeldelse-template");
+
 anmeldelser.forEach((anmeldelse) => {
     console.log(anmeldelse.navn)
 })
