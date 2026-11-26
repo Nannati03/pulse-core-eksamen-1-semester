@@ -1013,64 +1013,6 @@ background-position: center;
 
 /* <!-- ================= Footer ================= --> */
 
-.footer{
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.footer-logo img {
-  height: 63px;
-  width: 160px;
-}
-
-.footer-kolonne1{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
-.footer-kolonne2{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
-.footer-kolonne3{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
-.footer-kolonne4{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
-.footer-kolonne5{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
-.footer-kolonne6{
-    display:flex; 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 45px; 
-}
-
 
 
 
